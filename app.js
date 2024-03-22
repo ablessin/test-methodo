@@ -4,6 +4,11 @@ const port = 3000;
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+  const MyService = require('./service.js');
+
+// Utilisation du service
+MyService.doOperation(myData);
+
 });
 
 app.listen(port, () => {
